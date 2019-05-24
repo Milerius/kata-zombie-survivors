@@ -19,10 +19,10 @@ namespace Kata_Zombie_Survivors
         }
 
         public string Name { get; set; }
-        public uint Wounds { get; set; } = 0;
+        public uint Wounds { get; private set; }
 
         public uint NbActions { get; private set; } = NbMaxActionsPerTurn;
 
-        public SurvivorState State { get; set; } = SurvivorState.Alive;
+        public SurvivorState State { get; private set; } = SurvivorState.Alive;
     }
 }
